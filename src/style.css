@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%);
+  --font-primary: "Kumbh Sans";
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-primary);
+}
+body {
+  display: flex;
+  background: url("../images/bg-pattern-top.svg") no-repeat -380px -550px,
+    url("../images/bg-pattern-bottom.svg") 450px 400px no-repeat;
+  background-color: var(--Dark-cyan);
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 350px;
+  height: 375px;
+  background-color: white;
+  border-radius: 15px;
+}
+main h3 {
+  color: var(--Very-dark-desaturated-blue);
+}
+main p {
+  color: var(--Dark-gray);
+}
+
+main .back-card {
+  position: absolute;
+  background-image: url(../images/bg-pattern-card.svg);
+  width: 350px;
+  height: 140px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  z-index: 1;
+}
+main .img-main {
+  width: 110px;
+  height: 110px;
+  margin-top: 80px;
+  border-radius: 60px;
+  border: 5px solid white;
+  z-index: 1;
+}
+main .name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  z-index: 1;
+}
+main .name label {
+  font-weight: 400;
+  color: var(--Dark-gray);
+}
+
+main .img-main img {
+  border-radius: 50px;
+}
+main .boxes {
+  display: flex;
+  width: 100%;
+  border-top: 1px solid var(--Dark-gray);
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+  padding-top: 30px;
+  text-align: center;
+}
+main .boxes p {
+  font-size: 12px;
+}
+/* #region D*/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: black;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+/* #endregion */
